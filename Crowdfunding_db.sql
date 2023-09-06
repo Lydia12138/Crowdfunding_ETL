@@ -1,3 +1,23 @@
+CREATE TABLE contacts (
+    contact_id INTEGER primary key NOT NULL ,
+    first_name VARCHAR(50)  NOT NULL ,
+    last_name VARCHAR(50)  NOT NULL ,
+    email VARCHAR(50)  NOT NULL
+);
+select * from contacts
+
+CREATE TABLE category (
+    category_id VARCHAR(10) primary key NOT NULL ,
+    category VARCHAR(50)  NOT NULL 
+);	
+select * from category 
+	
+CREATE TABLE subcategory (
+    subcategory_id VARCHAR(50) primary key NOT NULL ,
+    subcategory VARCHAR(50)  NOT NULL 
+);
+select * from subcategory
+
 CREATE TABLE campaign (
     cf_id INTEGER  PRIMARY KEY ,
     contact_id INTEGER  NOT NULL ,
@@ -19,23 +39,4 @@ CREATE TABLE campaign (
 );
 select * from campaign
 
-CREATE TABLE contacts (
-    contact_id INTEGER  NOT NULL ,
-    first_name VARCHAR(50)  NOT NULL ,
-    last_name VARCHAR(50)  NOT NULL ,
-    email VARCHAR(50)  NOT NULL,
-);
-select * from contacts
-
-CREATE TABLE category (
-    category_id VARCHAR(50)  NOT NULL ,
-    category VARCHAR(50)  NOT NULL ,
-);	
-select * from category 
-	
-CREATE TABLE subcategory (
-    subcategory_id VARCHAR(50)  NOT NULL ,
-    subcategory VARCHAR(50)  NOT NULL ,
-);
-select * from subcategory
 
